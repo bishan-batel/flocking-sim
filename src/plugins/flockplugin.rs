@@ -1,5 +1,5 @@
 use crate::plugins::flock::*;
-use bevy::{prelude::*, transform::transform_propagate_system};
+use bevy::prelude::*;
 use rand::prelude::*;
 
 pub struct FlockPlugin;
