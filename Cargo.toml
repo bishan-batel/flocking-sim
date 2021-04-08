@@ -1,0 +1,9 @@
+[package]
+name = "Flocking Simulation"
+version = "0.1.0"
+authors = ["You <bishan.batel@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+bevy = "0.5.0"
+rand = "0.8.3"
