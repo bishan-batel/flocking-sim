@@ -1,5 +1,5 @@
 [package]
-name = "Flocking Simulation"
+name = "flocking_simulation"
 version = "0.1.0"
 authors = ["You <bishan.batel@gmail.com>"]
 edition = "2018"
