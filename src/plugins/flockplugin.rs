@@ -29,13 +29,13 @@ impl FlockPlugin {
                 ..Default::default()
             })
             .with_children(|flock| {
-                for _i in 1..200 {
+                for _ in 0..130 {
                     flock
                         .spawn()
                         .insert(Boid)
                         .insert_bundle(SpriteBundle {
                             material: materials.add(ColorMaterial {
-                                color: Color::WHITE,
+                                color: Color::hex("A9B665").unwrap(),
                                 texture: Some(texture.clone()),
                             }),
                             sprite: Sprite::new(Vec2::new(20.0, 12.0)),
