@@ -23,10 +23,10 @@ impl Default for Flock {
             max_speed: 200.0,
             max_acc: 100.0,
             safe_distance: 30.0,
-            flock_radius: 2000.0,
-            alignment_strength: 0.4,
-            cohesion_strength: 5.0,
-            seperation_strength: 10.0,
+            flock_radius: 300.0,
+            alignment_strength: 3.0,
+            cohesion_strength: 2.0,
+            seperation_strength: 8.0,
         }
     }
 }
@@ -114,9 +114,9 @@ impl Flock {
                     acc = flock.max_acc * acc.normalize();
                 }
                 velocity.0 += acc * delta;
-                if velocity.0.length_squared() > flock.max_speed * flock.max_speed {
-                    velocity.0 = velocity.0.normalize() * flock.max_speed;
-                }
+                // if velocity.0.length_squared() > flock.max_speed * flock.max_speed {
+                velocity.0 = velocity.0.normalize() * flock.max_speed;
+                // }
             }
         }
     }
