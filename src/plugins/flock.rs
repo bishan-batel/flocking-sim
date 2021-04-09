@@ -21,10 +21,10 @@ impl Default for Flock {
     fn default() -> Self {
         Flock {
             max_speed: 200.0,
-            max_acc: 100.0,
+            max_acc: 60.0,
             safe_distance: 30.0,
             flock_radius: 300.0,
-            alignment_strength: 3.0,
+            alignment_strength: 1.0,
             cohesion_strength: 2.0,
             seperation_strength: 8.0,
         }
